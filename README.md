@@ -6,4 +6,4 @@ Widgets available:
 
 #user-account-drawer
 
-![alt text](https://github.com/codeglocks/flutter-awesome-ui/screenshots/userdrawer.png "sample user account drawer" )
+![alt text](https://github.com/codeglocks/flutter-awesome-ui/blob/main/screenshots/userdrawer.png "sample user account drawer" )
