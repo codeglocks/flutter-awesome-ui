@@ -2,9 +2,8 @@
 
 Widgets available:
 
-[User Account drawer](#user-account-drawer)
-
-[Cupertino Action Sheet](#Cupertino-Action-sheet)
+* [User Account drawer](#user-account-drawer)
+* [Cupertino Action Sheet](#Cupertino-Action-sheet)
 
 ## user-account-drawer
 <img src="https://i.imgur.com/ijuYFHa.png" width="300" alt="sample user account drawer">
