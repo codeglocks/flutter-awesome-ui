@@ -2,8 +2,10 @@
 
 Widgets available:
 
-[User Account drawer](#user-account-drawer)
-[Cupertino Action Sheet](#Cupertino-Action-sheet)
+* [User Account drawer](#user-account-drawer)
+* [Cupertino Action Sheet](#Cupertino-Action-sheet)
+* [Expansion Tile](#Expansion-Tile)
+* [Expansion tile panel](#Expansion-tile-panel)
 
 ## user-account-drawer
 <img src="https://i.imgur.com/ijuYFHa.png" width="300" alt="sample user account drawer">
@@ -12,6 +14,7 @@ Widgets available:
 ## Cupertino-Action-sheet
 <img src="https://i.imgur.com/Vf9U7wB.png" width="300" alt="sample Cupertino action sheet">
 <img src="https://i.imgur.com/obk8syS.png" width="300" alt="sample Cupertino action sheet">
+
 ## Expansion-Tile (Single)
 <img src="https://i.imgur.com/iVN1XxO.png" width="300" alt="Single expansion tile">
 <img src="https://i.imgur.com/zOYnBng.png" width="300" alt="Single expansion tile - expanded">
