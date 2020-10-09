@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/widgets/buttons/gradient_button/MyGradientButton.dart';
 import 'package:flutter_widgets/widgets/cupertinoActionSheet/CupertinoActionSheet.dart';
 import 'package:flutter_widgets/widgets/drawer/Drawer.dart';
+import 'package:flutter_widgets/widgets/expansionTile/singleTile/MyExpansionTile.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen';
@@ -19,16 +20,27 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           "Awesome flutter widgets",
         ),
       ),
-      body: Center(
-        child: Container(
-          child: MyGradientButton(
-            title: 'Show Action Sheet',
-            onPress: () async {
-              var f = await showCupertinoModalPopup(
-                  context: context,
-                  builder: (context) => MyCupertinoActionSheet());
-            },
-          ),
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            MyGradientButton(
+              title: 'Show Action Sheet',
+              onPress: () async {
+                var f = await showCupertinoModalPopup(
+                    context: context,
+                    builder: (context) => MyCupertinoActionSheet());
+              },
+            ),
+            MyGradientButton(
+              title: 'Show Expansion tile',
+              onPress: () {
+                Navigator.pushNamed(context, MyExpansionTile.id);
+              },
+            ),
+          ],
         ),
       ),
       drawer: UserAccountDrawer(),
