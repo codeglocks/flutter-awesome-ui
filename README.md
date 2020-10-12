@@ -6,7 +6,7 @@ Widgets available:
 * [Cupertino Action Sheet](#Cupertino-Action-sheet)
 * [Expansion Tile](#Expansion-Tile-Single)
 * [Expansion tile panel](#Expansion-tile-panel)
-
+* [Simple swipe up panel](#Simple-swipe-up)
 ## user-account-drawer
 | Light theme  | Dark Theme |
 | ------------- | ------------- |
@@ -34,5 +34,14 @@ Widgets available:
   |
 
 
+## Simple-swipe-up
+| Screen 1  | Screen 2 |
+| ------------- | ------------- |
+| <img src="https://i.imgur.com/ztflc8n.png" width="300" alt="before swipe up"> | <img src="https://i.imgur.com/zwyGVXn.png" width="300" alt="after swipe up">
+  |
 
+```
+this widget has been made using sliding_up_panel 1.0.2
+since we are not using any packages here, I added complete source code to 1 file
+```
 

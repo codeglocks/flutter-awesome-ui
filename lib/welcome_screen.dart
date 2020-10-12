@@ -4,6 +4,7 @@ import 'package:flutter_widgets/widgets/buttons/gradient_button/MyGradientButton
 import 'package:flutter_widgets/widgets/cupertinoActionSheet/CupertinoActionSheet.dart';
 import 'package:flutter_widgets/widgets/drawer/Drawer.dart';
 import 'package:flutter_widgets/widgets/expansionTile/singleTile/MyExpansionTile.dart';
+import 'package:flutter_widgets/widgets/swipe_panel/Swipe_Panel.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen';
@@ -38,6 +39,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               title: 'Show Expansion tile',
               onPress: () {
                 Navigator.pushNamed(context, MyExpansionTile.id);
+              },
+            ),
+            MyGradientButton(
+              title: 'Swipe Up Panel',
+              onPress: () {
+                Navigator.pushNamed(context, SwipeUpPanel.id);
               },
             ),
           ],
