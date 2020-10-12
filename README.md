@@ -35,7 +35,6 @@ Widgets available:
 
 
 ## Simple-swipe-up
-
 | Screen 1  | Screen 2 |
 | ------------- | ------------- |
 | <img src="https://i.imgur.com/ztflc8n.png" width="300" alt="before swipe up"> | <img src="https://i.imgur.com/zwyGVXn.png" width="300" alt="after swipe up">
