@@ -1,4 +1,4 @@
-name: Flutter CI For BMI App
+name: Flutter CI For Flutter-awesome-ui library
 
 on:
   push:
