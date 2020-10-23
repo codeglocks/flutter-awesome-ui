@@ -1,0 +1,8 @@
+change:
+  - ./*
+
+source:
+  - lib/**/*
+
+test:
+  - test/**/*
