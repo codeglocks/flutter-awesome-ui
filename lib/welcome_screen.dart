@@ -30,7 +30,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             MyGradientButton(
               title: 'Show Action Sheet',
               onPress: () async {
-                var f = await showCupertinoModalPopup(
+                await showCupertinoModalPopup(
                     context: context,
                     builder: (context) => MyCupertinoActionSheet());
               },

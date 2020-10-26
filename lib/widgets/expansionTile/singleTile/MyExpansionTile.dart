@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/widgets/buttons/gradient_button/MyGradientButton.dart';
 import 'package:flutter_widgets/widgets/expansionTile/tilePanel/MyExpansionTilePanel.dart';
 
 class MyExpansionTile extends StatelessWidget {
