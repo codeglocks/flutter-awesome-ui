@@ -28,15 +28,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             MyGradientButton(
+              key: Key('actionSheetKey'),
               title: 'Show Action Sheet',
               onPress: () async {
-                var f = await showCupertinoModalPopup(
+                await showCupertinoModalPopup(
                     context: context,
                     builder: (context) => MyCupertinoActionSheet());
               },
             ),
             MyGradientButton(
-              title: 'Show Expansion tile',
+              title: 'Show Expansion Tile',
               onPress: () {
                 Navigator.pushNamed(context, MyExpansionTile.id);
               },
