@@ -6,6 +6,8 @@ import 'package:flutter_widgets/widgets/drawer/Drawer.dart';
 import 'package:flutter_widgets/widgets/expansionTile/singleTile/MyExpansionTile.dart';
 import 'package:flutter_widgets/widgets/swipe_panel/Swipe_Panel.dart';
 
+import 'widgets/alertDialog/alert_dialog.dart';
+
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen';
   @override
@@ -46,6 +48,25 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               title: 'Swipe Up Panel',
               onPress: () {
                 Navigator.pushNamed(context, SwipeUpPanel.id);
+              },
+            ),
+            MyGradientButton(
+              title: 'Alert Dialog',
+              onPress: () {
+                var dialog = CustomAlertDialog(
+                    title: "View Swipe panel",
+                    message:
+                        "Are you sure, do you want to view swipe up panel?",
+                    onPositivePressed: () {
+                      Navigator.popAndPushNamed(context, SwipeUpPanel.id);
+                    },
+                    positiveBtnText: 'Yes',
+                    negativeBtnText: 'No',
+                    bgColor: Colors.white);
+
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) => dialog);
               },
             ),
           ],
