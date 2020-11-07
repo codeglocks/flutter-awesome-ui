@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets/widgets/buttons/gradient_button/MyGradientButton.dart';
 import 'package:flutter_widgets/widgets/cupertinoActionSheet/CupertinoActionSheet.dart';
 import 'package:flutter_widgets/widgets/drawer/Drawer.dart';
+import 'package:flutter_widgets/widgets/error404/Error404Design1.dart';
 import 'package:flutter_widgets/widgets/expansionTile/singleTile/MyExpansionTile.dart';
 import 'package:flutter_widgets/widgets/swipe_panel/Swipe_Panel.dart';
 
@@ -67,6 +68,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 showDialog(
                     context: context,
                     builder: (BuildContext context) => dialog);
+              },
+            ),
+            MyGradientButton(
+              title: '404 Error page',
+              onPress: () {
+                Navigator.pushNamed(context, Error404.id);
               },
             ),
           ],

@@ -18,7 +18,7 @@ void main() {
     await tester.pumpWidget(MyApp());
 
     // Verify number of buttons in the main UI
-    expect(find.byType(MyGradientButton), findsNWidgets(4));
+    expect(find.byType(MyGradientButton), findsNWidgets(5));
     // Verify texts in the main UI.
     expect(find.text('Show Action Sheet'), findsOneWidget);
     expect(find.text('Show Expansion Tile'), findsOneWidget);
